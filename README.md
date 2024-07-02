@@ -3,10 +3,11 @@
         <img src="https://raw.githubusercontent.com/psnosignaluk/hangover53/main/docs/img/53.png" alt="Hangover 53" />
     </a>
 </p>
-<p align="center"><em>Hunt down pesky orphaned DNS records in AWS.</em></p>
+<p align="center"><em>Analyse DNS records.</em></p>
 
-Hangover53 is inspired by a hangover from orphaned DNS records. This code would be run in a container, either on k8s
-or Fargate, that scrapes DNS and goes hunting for a map between record and resource. When it can't find a home for a
-record, it'll complain.
+Hangover53 is a tool for analysing DNS records. DNS enumeration, finding orphaned DNS records, searching for
+subdomains that could be hijacked and more are all intended to be part of this tool's feature set.
+
+It's first iterations will run from the command line. Future versions will run from a container on a cron.
 
 ---
